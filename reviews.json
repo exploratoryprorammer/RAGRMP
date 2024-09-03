@@ -1,22 +1,100 @@
 {
-    "reviews": [
-      {
-        "professor": "Dr. Sarah Johnson",
-        "subject": "Computer Science",
-        "stars": 5,
-        "review": "Dr. Johnson's lectures are incredibly engaging and informative. She makes complex topics easy to understand."
-      },
-      {
-        "professor": "Prof. Michael Lee",
-        "subject": "Physics",
-        "stars": 4,
-        "review": "Prof. Lee's enthusiasm for physics is contagious. His demonstrations in class really bring the concepts to life."
-      },
-      {
-        "professor": "Dr. Emily Chen",
-        "subject": "Biology",
-        "stars": 5,
-        "review": "Dr. Chen's research-based teaching approach is outstanding. She's always up-to-date with the latest developments in the field."
-      }
-    ]
-  }
+  "reviews": [
+    {
+      "professor": "David Cantor",
+      "subject": "Behavioral Operations Management",
+      "stars": 5,
+      "review": "Professor Cantor's classes are highly engaging. His real-world examples from motor carrier safety make complex concepts accessible and relevant.",
+      "research": [
+        "Environmental Management",
+        "Motor Carrier Safety",
+        "Behavioral Operations Management"
+      ]
+    },
+    {
+      "professor": "Haozhe Chen",
+      "subject": "International Logistics",
+      "stars": 5,
+      "review": "Dr. Chen's lectures are comprehensive and provide a global perspective on supply chain management. His teaching style is particularly praised by students.",
+      "research": [
+        "Supply chain integration",
+        "Supply chain relationships",
+        "International logistics",
+        "Reverse logistics"
+      ]
+    },
+    {
+      "professor": "Meltem Denizel",
+      "subject": "Process Analysis",
+      "stars": 4,
+      "review": "Professor Denizel's hands-on approach to teaching process analysis is highly valued. Her courses offer practical insights directly applicable to industry challenges.",
+      "research": [
+        "Process Analysis and Control",
+        "Product Recovery Systems",
+        "Supply Chain Management"
+      ]
+    },
+    {
+      "professor": "Frank Montabon",
+      "subject": "Sustainability in Supply Chains",
+      "stars": 5,
+      "review": "Dr. Montabon's courses are transformative. He inspires critical thinking about the future of manufacturing by connecting environmental responsibility with business practices.",
+      "research": [
+        "Sustainability",
+        "Supply Chains and Human Flourishing",
+        "Environmentally Responsible Manufacturing (ERM)",
+        "Environmental Management Systems (EMS)"
+      ]
+    },
+    {
+      "professor": "Peter Ralston",
+      "subject": "Supply Chain Collaboration",
+      "stars": 5,
+      "review": "Professor Ralston's teaching is highly regarded. He incorporates research on factor-market rivalry into discussions, providing a strategic perspective on supply chain decisions.",
+      "research": [
+        "Factor-market rivalry",
+        "Supply chain collaboration",
+        "A firm's strategic decision to be a part of a supply chain"
+      ]
+    },
+    {
+      "professor": "William Rose",
+      "subject": "Urban Logistics",
+      "stars": 4,
+      "review": "Dr. Rose's courses on urban logistics and last-mile delivery are popular. His use of simulation modeling in teaching vehicle routing problems is both innovative and practical.",
+      "research": [
+        "Qualitative Methods",
+        "Urban Logistics",
+        "Last Mile Delivery",
+        "Simulation Modeling",
+        "Vehicle Routing"
+      ]
+    },
+    {
+      "professor": "Henrik Sternberg",
+      "subject": "Supply Chain Blockchain",
+      "stars": 5,
+      "review": "Professor Sternberg's classes on supply chain blockchain technology are cutting-edge. He excels at explaining complex technological concepts and their applications in supply chain transportation.",
+      "research": [
+        "Cabotage",
+        "Technology Management",
+        "Supply Chain Blockchain",
+        "Design Science Research",
+        "Supply Chain Transportation"
+      ]
+    },
+    {
+      "professor": "Yoshinori Suzuki",
+      "subject": "Logistics Decision Support Systems",
+      "stars": 5,
+      "review": "Dr. Suzuki's teaching is highly praised. Students find his courses on fuel optimization and vehicle routing particularly valuable, appreciating the blend of theoretical knowledge and practical application.",
+      "research": [
+        "Motor Carrier Management",
+        "Fuel Optimization Models",
+        "Logistics Decision Support Systems",
+        "Truck Driver Management",
+        "Vehicle Routing"
+      ]
+    }
+  ]
+}

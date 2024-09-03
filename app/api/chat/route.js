@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { Pinecone } from "@pinecone-database/pinecone";
 import OpenAI from "openai";
 
-const systemPromp = `You are an AI assistant for a RateMyProfessor-like platform. Your role is to help students find professors based on their specific queries using a RAG (Retrieval-Augmented Generation) system. For each user query, you will:
+const systemPrompt = `You are an AI assistant for a RateMyProfessor-like platform. Your role is to help students find professors based on their specific queries using a RAG (Retrieval-Augmented Generation) system. For each user query, you will:
 
 Analyze the student's request to understand their preferences and requirements.
 Use the RAG system to retrieve relevant information about professors from the database.
@@ -34,10 +34,10 @@ export async function POST(req){
     const pc = new Pinecone({
         apiKey: process.env.PINECONE_API_KEY,
     })
-    const index = pc.index('rag').namespace('test')
+    const index = pc.index('rag').namespace('ISU Suply chain management professors')
     const openai = new OpenAI()
     const text = data[data.length - 1].content
-    const embedding = await OpenAI.Embeddings.create({
+    const embedding = await openai.embeddings.create({
         model: 'text-embedding-3-small',
         input: text,
         encoding_format: 'float',
@@ -49,7 +49,7 @@ export async function POST(req){
         vector: embedding.data[0].embedding
     })
 
-    let resultString = 
+    let resultString = ''
     results.matches.forEach((match)=>{
         resultString+=`
         Professor: ${match.id}
@@ -64,16 +64,16 @@ export async function POST(req){
     const lastMessageContent = lastMessage.content + resultString
     const lastDataWithoutLastMessage = data.slice(0, data.length - 1)
     const completions = await openai.chat.completions.create({
-        messages=[
+        messages: [
             {role: 'system', content: systemPrompt},
-            ...lastDataWithoutLastMessage
+            ...lastDataWithoutLastMessage,
             {role: 'user', content: lastMessageContent}
         ],
         model: 'gpt-4o-mini',
         stream: true,
     })
 
-    const stream = ReadableStream({
+    const stream = new ReadableStream({
         async start(controller){
             const encoder = new TextEncoder()
             try {
