@@ -1,0 +1,22 @@
+{
+    "reviews": [
+      {
+        "professor": "Dr. Sarah Johnson",
+        "subject": "Computer Science",
+        "stars": 5,
+        "review": "Dr. Johnson's lectures are incredibly engaging and informative. She makes complex topics easy to understand."
+      },
+      {
+        "professor": "Prof. Michael Lee",
+        "subject": "Physics",
+        "stars": 4,
+        "review": "Prof. Lee's enthusiasm for physics is contagious. His demonstrations in class really bring the concepts to life."
+      },
+      {
+        "professor": "Dr. Emily Chen",
+        "subject": "Biology",
+        "stars": 5,
+        "review": "Dr. Chen's research-based teaching approach is outstanding. She's always up-to-date with the latest developments in the field."
+      }
+    ]
+  }
